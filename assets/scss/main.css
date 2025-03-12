@@ -382,6 +382,7 @@ header .right button img {
   flex-direction: column;
   justify-content: space-between;
   gap: 110px;
+  position: fixed;
 }
 .content .nav .buttons {
   display: flex;
@@ -416,6 +417,7 @@ header .right button img {
   height: 550px;
   margin-top: 30px;
   padding: 0 50px;
+  margin-left: 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -474,13 +476,15 @@ header .right button img {
   padding: 17px;
 }
 .content .profile .profilePic table td:hover {
-  color: rgb(51, 97, 255);
   cursor: pointer;
   background-color: #ffffff;
   padding: 20px;
   border: none;
   border-radius: 10px;
   position: absolute;
+}
+.content .profile .profilePic table td:hover p {
+  color: rgb(51, 97, 255);
 }
 .content .profile .socials {
   border: rgb(173, 184, 204) 1px solid;
@@ -505,9 +509,10 @@ header .right button img {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  align-items: center;
   border-bottom: rgb(173, 184, 204) 1px solid;
   gap: 150px;
-  padding: 20px 40px;
+  padding: 0 40px;
 }
 .content .home .header .links {
   display: flex;
@@ -516,7 +521,190 @@ header .right button img {
 .content .home .header .links a {
   display: inline-block;
   min-width: 90px;
+  color: rgb(125, 143, 179);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  padding: 18px 0;
+}
+.content .home .header .links a:hover {
+  color: rgb(51, 97, 255);
+  border-bottom: rgb(51, 97, 255) solid 1px;
+  transition: none;
 }
 .content .home .header .links a img {
   display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+.content .home .header .search {
+  width: 220px;
+  border: #ffffff 1px solid;
+  border-radius: 20px;
+  background-color: #ffffff;
+  padding: 5px 10px;
+}
+.content .home .header .search input {
+  width: 100px;
+  border: none;
+  background-color: transparent;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-left: 10px;
+}
+.content .home .header .search input::-moz-placeholder {
+  color: rgb(125, 143, 179);
+}
+.content .home .header .search input::placeholder {
+  color: rgb(125, 143, 179);
+}
+.content .home .dashboards {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+.content .home .dashboards .head {
+  width: 240px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 16px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+.content .home .dashboards .head .text {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.content .home .dashboards .head .text img:first-of-type {
+  margin-left: -16px;
+}
+.content .home .dashboards .head .text p {
+  color: rgb(77, 94, 128);
+  font-size: 12px;
+  font-weight: 700;
+}
+.content .home .dashboards .head .buttons {
+  display: flex;
+  gap: 15px;
+}
+.content .home .dashboards .head .buttons button {
+  background-color: transparent;
+  border: none;
+}
+.content .home .dashboards .pic {
+  display: flex;
+  flex-direction: column;
+}
+.content .home .dashboards .pic:hover {
+  border: rgb(255, 102, 51) 2px solid;
+  box-shadow: rgba(38, 51, 77, 0.03);
+  cursor: pointer;
+}
+.content .home .dashboards .pic img:first-of-type {
+  width: 100%;
+  height: 160px;
+}
+.content .home .dashboards .pic .content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+.content .home .dashboards .pic .content .avatar {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(173, 184, 204);
+  font-size: 10px;
+  font-weight: 700;
+  align-items: center;
+}
+.content .home .dashboards .pic .content .avatar img {
+  width: 18px;
+  height: 18px;
+}
+.content .home .dashboards .pic .content h3 {
+  color: rgb(107, 122, 153);
+  font-size: 12px;
+  font-weight: 700;
+}
+.content .home .dashboards .pic .content .icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.content .home .dashboards .pic .content .icons p {
+  color: rgb(107, 122, 153);
+  font-size: 10px;
+  font-weight: 700;
+}
+.content .home .dashboards .pic .content .icons img {
+  width: 15px;
+  height: 15px;
+}
+.content .home .dashboards .tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 17px;
+}
+.content .home .dashboards .tasks:hover {
+  border: rgb(255, 102, 51) 2px solid;
+  box-shadow: rgba(38, 51, 77, 0.03);
+  cursor: pointer;
+}
+.content .home .dashboards .tasks .avatar {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(173, 184, 204);
+  font-size: 10px;
+  font-weight: 700;
+  align-items: center;
+}
+.content .home .dashboards .tasks .avatar .images {
+  display: flex;
+}
+.content .home .dashboards .tasks .avatar .images img {
+  border-radius: 50%;
+}
+.content .home .dashboards .tasks h3 {
+  color: rgb(107, 122, 153);
+  font-size: 12px;
+  font-weight: 700;
+}
+.content .home .dashboards a:last-of-type {
+  color: rgb(107, 122, 153);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 10px;
+}
+.content .home .dashboards .toDo {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.content .home .dashboards .inWork {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.content .home .dashboards .review {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.content .home .dashboards .done {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
 }/*# sourceMappingURL=main.css.map */
