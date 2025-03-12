@@ -249,7 +249,7 @@ header {
   display: flex;
   max-width: 1600px;
   width: 100%;
-  padding: 20px;
+  padding: 10px;
   flex-direction: row;
   justify-content: space-between;
   border-bottom: #e2dede solid 1px;
@@ -259,11 +259,12 @@ header .left {
   gap: 40px;
 }
 header .left button {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 100px;
   border: transparent solid 1px;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
+  margin: 10px 0;
   box-shadow: rgba(38, 51, 77, 0.03);
 }
 header .left h2 {
@@ -271,8 +272,8 @@ header .left h2 {
   font-family: sans-serif;
   font-weight: 700;
   line-height: 30px;
-  font-size: 18px;
-  padding: 10px;
+  font-size: 16px;
+  margin: 15px 0;
 }
 header .menu {
   display: flex;
@@ -358,12 +359,148 @@ header .right p {
 header .right button {
   background-color: rgb(255, 255, 255);
   box-shadow: rgba(38, 51, 77, 0.03);
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 100px;
   border: transparent 1px solid;
 }
 header .right button img {
+  width: 20px;
+  height: 20px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  height: 100%;
+  width: 75px;
+  padding: 20px;
+}
+.content .nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 110px;
+}
+.content .nav .buttons {
+  display: flex;
+  flex-direction: column;
+}
+.content .nav .buttons button {
+  border: none;
+  background-color: transparent;
+}
+.content .nav .buttons button img {
+  width: 45px;
+  height: 45px;
+}
+.content .nav .avatars {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.content .nav .avatars img {
+  width: 35px;
+  height: 35px;
+}
+.content .nav .avatars button {
+  border: none;
+  background-color: transparent;
+}
+.content .nav .avatars button img {
+  width: 45px;
+  height: 45px;
+}
+.content .profile {
+  height: 550px;
+  margin-top: 30px;
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.content .profile .profilePic {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.content .profile .profilePic .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.content .profile .profilePic .buttons button {
+  background-color: rgb(255, 255, 255);
+  border: transparent;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+.content .profile .profilePic .buttons button img {
   width: 25px;
   height: 25px;
+}
+.content .profile .profilePic .pic {
+  margin: 0 auto;
+}
+.content .profile .profilePic .pic img {
+  width: 100px;
+  height: 80px;
+}
+.content .profile .profilePic h2 {
+  color: rgb(107, 122, 153);
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+}
+.content .profile .profilePic p {
+  color: rgb(173, 184, 204);
+  font-size: 12px;
+  text-align: center;
+}
+.content .profile .profilePic table {
+  border-radius: 10px;
+  overflow: hidden;
+  border-collapse: collapse;
+}
+.content .profile .profilePic table img {
+  width: 20px;
+  height: 20px;
+  margin: 5px 15px;
+}
+.content .profile .profilePic table td {
+  border: rgb(173, 184, 204) 1px solid;
+  padding: 17px;
+}
+.content .profile .profilePic table td:hover {
+  color: rgb(51, 97, 255);
+  cursor: pointer;
+  background-color: #ffffff;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  position: absolute;
+}
+.content .profile .socials {
+  border: rgb(173, 184, 204) 1px solid;
+  border-radius: 20px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.content .profile .socials img {
+  width: 15px;
+  height: 15px;
+}
+.content .profile .socials img:hover {
+  cursor: pointer;
+}
+.content .home {
+  border: rgb(173, 184, 204) 1px solid;
+  border-radius: 10px;
+}
+.content .home .header {
+  display: flex;
 }/*# sourceMappingURL=main.css.map */
