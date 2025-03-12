@@ -133,9 +133,27 @@
     .home{
         border: rgba(173, 184, 204, 1) 1px solid;
         border-radius: 10px;
+       
         .header{
             display: flex;
-            justify-content: ;
+            justify-content:space-between ;
+            flex-direction: row;
+            border-bottom:rgba(173, 184, 204, 1) 1px solid ;
+            gap: 150px;
+            padding: 20px 40px;
+        .links{
+            display: flex;
+            gap: 25px;
+          
+            a{
+                display: inline-block;
+                min-width: 90px;
+                img{
+                    display: inline-block;
+                }
+                
+            }
+        }
         }
     }
   }

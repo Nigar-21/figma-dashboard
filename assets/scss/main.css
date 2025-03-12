@@ -503,4 +503,20 @@ header .right button img {
 }
 .content .home .header {
   display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  border-bottom: rgb(173, 184, 204) 1px solid;
+  gap: 150px;
+  padding: 20px 40px;
+}
+.content .home .header .links {
+  display: flex;
+  gap: 25px;
+}
+.content .home .header .links a {
+  display: inline-block;
+  min-width: 90px;
+}
+.content .home .header .links a img {
+  display: inline-block;
 }/*# sourceMappingURL=main.css.map */
