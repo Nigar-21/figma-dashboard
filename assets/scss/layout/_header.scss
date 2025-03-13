@@ -6,7 +6,9 @@ header {
   flex-direction: row;
   justify-content: space-between;
   border-bottom: #e2dede solid 1px;
-
+position: fixed;
+z-index: 1;
+background-color: rgba(247, 248, 250, 1);
   .left {
     display: flex;
     gap: 40px;

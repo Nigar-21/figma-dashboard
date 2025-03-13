@@ -253,6 +253,9 @@ header {
   flex-direction: row;
   justify-content: space-between;
   border-bottom: #e2dede solid 1px;
+  position: fixed;
+  z-index: 1;
+  background-color: rgb(247, 248, 250);
 }
 header .left {
   display: flex;
@@ -383,6 +386,9 @@ header .right button img {
   justify-content: space-between;
   gap: 110px;
   position: fixed;
+  padding-top: 100px;
+  border-right: #e2dede solid 1px;
+  padding-right: 10px;
 }
 .content .nav .buttons {
   display: flex;
@@ -415,7 +421,7 @@ header .right button img {
 }
 .content .profile {
   height: 550px;
-  margin-top: 30px;
+  margin-top: 100px;
   padding: 0 50px;
   margin-left: 50px;
   display: flex;
@@ -504,6 +510,7 @@ header .right button img {
 .content .home {
   border: rgb(173, 184, 204) 1px solid;
   border-radius: 10px;
+  margin-top: 90px;
 }
 .content .home .header {
   display: flex;
@@ -564,6 +571,7 @@ header .right button img {
   display: flex;
   gap: 30px;
   justify-content: space-between;
+  position: relative;
   padding: 20px 40px;
 }
 .content .home .dashboards .head {
@@ -622,7 +630,7 @@ header .right button img {
   display: flex;
   justify-content: space-between;
   color: rgb(173, 184, 204);
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 700;
   align-items: center;
 }
@@ -667,44 +675,155 @@ header .right button img {
   display: flex;
   justify-content: space-between;
   color: rgb(173, 184, 204);
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 700;
   align-items: center;
 }
-.content .home .dashboards .tasks .avatar .images {
+.content .home .dashboards .tasks .avatar p img {
+  width: 12px;
+  height: 12px;
+  margin-right: 10px;
+}
+.content .home .dashboards .tasks .buttons {
+  margin-top: 15px;
+}
+.content .home .dashboards .tasks .buttons img {
+  width: 18px;
+  height: 18px;
+  margin: 5px;
+}
+.content .home .dashboards .tasks .buttons button {
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(51, 97, 255);
+  color: #ffffff;
+  padding: 10px;
+  font-size: 10px;
+  font-weight: 900;
+  margin-left: 60px;
+}
+.content .home .dashboards .tasks .images {
   display: flex;
 }
-.content .home .dashboards .tasks .avatar .images img {
+.content .home .dashboards .tasks .images img {
   border-radius: 50%;
 }
-.content .home .dashboards .tasks h3 {
+.content .home .dashboards h3 {
   color: rgb(107, 122, 153);
   font-size: 12px;
   font-weight: 700;
 }
-.content .home .dashboards a:last-of-type {
+.content .home a:last-of-type {
   color: rgb(107, 122, 153);
   font-size: 12px;
   font-weight: 700;
   padding: 10px;
 }
-.content .home .dashboards .toDo {
+.content .home .toDo {
   display: flex;
   gap: 10px;
   flex-direction: column;
 }
-.content .home .dashboards .inWork {
+.content .home .inWork {
   display: flex;
   gap: 10px;
   flex-direction: column;
 }
-.content .home .dashboards .review {
+.content .home .review {
   display: flex;
   gap: 10px;
   flex-direction: column;
 }
-.content .home .dashboards .done {
+.content .home .done {
   display: flex;
   gap: 10px;
   flex-direction: column;
+}
+.content .home .apps {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  max-width: 450px;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+}
+.content .home .apps .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.content .home .apps .head .text {
+  display: flex;
+  gap: 15px;
+  color: rgb(77, 94, 128);
+  font-size: 16px;
+  font-weight: 700;
+}
+.content .home .apps .head button {
+  border: none;
+  background-color: transparent;
+  margin-left: 100px;
+}
+.content .home .apps .mid {
+  display: flex;
+  gap: 10px;
+  padding: 15px 0 30px;
+  justify-content: space-around;
+  color: rgb(77, 94, 128);
+  font-size: 12px;
+  font-weight: 700;
+  position: relative;
+}
+.content .home .apps .mid::after {
+  content: "";
+  height: 1px;
+  width: 450px;
+  background-color: rgb(228, 228, 233);
+  position: absolute;
+  bottom: 0;
+}
+.content .home .apps .mid img {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+.content .home .apps .mid .left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.content .home .apps .mid .right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.content .home .apps .foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 15px;
+  margin-top: 20px;
+}
+.content .home .apps .foot p {
+  color: rgb(125, 143, 179);
+  font-size: 12px;
+  font-weight: 900;
+}
+.content .home .apps .foot span {
+  display: block;
+  color: rgb(77, 94, 128);
+  font-size: 12px;
+  font-weight: 900;
+}
+.content .home .apps .foot button {
+  background-color: rgb(41, 204, 57);
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0px 10px 30px 0px rgba(41, 204, 57, 0.2);
+  margin-left: 20px;
 }/*# sourceMappingURL=main.css.map */
